@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gdx card</title>
+    <style type="text/css">
+
+    	body{
+    		background-image:url("space2.png");
+            background-size:cover; 
+            background-repeat: no-repeat;
+    	}
+    #card {
+    	top:30px;
+        width: 80%;
+        height: 1200px;
+        border: 1px solid black;
+        position: relative;
+        left: 10%;
+        background-image: url("wolf2.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+    #text-container{
+    	position: relative;
+    	top:1%;
+    	height:80%;
+    	width:70%;
+    	left:1%;
+/*    	border:solid 1px black;
+*/    }
+
+    .text{
+    	position:relative;
+    	left:10%;
+    	opacity:0;
+    	font-family:courier;
+    	font-size:18px;
+
+    }
+
+    .small{
+    	font-size:18px;
+    }
+
+     .medium{
+    	font-size:24px;
+    }
+
+     .large{
+    	font-size:40px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+        <div id="text-container">
+            <div class="text" id="line1"> <span class="large">For Layla</span><div></div>
+            	<span class="medium"> When they returned as the wolf packs, the herds on the move, and willows slowed the flow. This, in turn, created space to return. These builders needed to raise their families.  The animals that depended on the riparian meadows came back, as well. The wolves exert their influence on the landscape. My hope is that the wolves enter my world. </span> 
+            </div>
+          
+        </div>
+    </div>
+    <script type="text/javascript">
+
+
+    var x=0;
+    document.addEventListener("click", function() {
+    	console.log('hi');
+        x = x + 1;
+        document.getElementById("line" + x).style.opacity = 1;
+
+    })
+    </script>
+</body>
+
+</html>

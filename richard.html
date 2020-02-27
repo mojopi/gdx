@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gdx card</title>
+    <style type="text/css">
+
+    	body{
+    		background-color:rgb(23,59, 81);
+    	}
+    #card {
+    	top:30px;
+        width: 80%;
+        height: 700px;
+        border: 1px solid black;
+        position: relative;
+        left: 10%;
+        background-image: url("flower1.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+    #text-container{
+    	position: relative;
+    	top:20%;
+    	height:80%;
+    	width:70%;
+    	left:15%;
+/*    	border:solid 1px black;
+*/    }
+
+    .text{
+    	position:relative;
+    	left:10%;
+    	opacity:0;
+    	font-family:courier;
+    	font-size:18px;
+
+    }
+
+    .small{
+    	font-size:18px;
+    }
+
+     .medium{
+    	font-size:36px;
+    }
+
+     .large{
+    	font-size:60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+        <div id="text-container">
+            <div class="text" id="line1">
+            	<span class="medium">
+
+                    Every tree worth keeping, my bug, even sick individuals other way round, and the supporting think silver-gray her, 
+
+                </span> 
+            </div>
+
+
+            <div class="text" id="line2">
+            	<span class="small"> 
+                they, too are even reluctant to abandon their dead every tree rot away into humus and disappear keep alive What’s the difference? </span>
+            </div>
+
+
+
+            <div class="text" id="line3">
+            	 <span class="small">Second class citizen quite fit — or may even affection — encounters air and better light </span> 
+            </div>
+            <div class="text" id="line4">
+            	<span class="medium"> quite a shoving match careful grow overly thick.Outer edges tightly connected die together.  As a rule, undisturbed beeches still alive street kids damaged planted, incapable</span> 
+            </div>
+            <div class="text" id="line5">
+            	<span class="small">behave like loners opportunity beybeetee</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+
+    var x=0;
+    document.addEventListener("click", function() {
+    	console.log('hi');
+        x = x + 1;
+        document.getElementById("line" + x).style.opacity = 1;
+
+    })
+    </script>
+</body>
+
+</html>
